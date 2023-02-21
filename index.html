@@ -8,18 +8,29 @@
 </head>
 <body>
     <h1>Awesome books</h1>
-
-    <form action="/awesome-books">
+        <!--<div class="book-list"></div>
+        <form id="book-form">
+            <div>
+                <input type="text"  placeholder="title">
+            </div>
+            <div>
+      <input type="text"  placeholder="Author">
+    </div>
+      <button type="submit" >Add</button>
+    </form>-->
+    <div class="book-list">
+    </div>
+    <form id="form">
         <div>
-      <label>Lorem ipsum<br>Testeroo Testyy</label><br>
-      <input type="submit"value="remove"><hr></div>
-      <div>
-      <label>Second books<br>Testeroo Testyy</label><br>
-      <input type="submit" value="remove"><hr>
-    </div>
-    <div>
-      <input type="text"  placeholder="title"><br><br>
-      <input type="text"  placeholder="Auther"><br><br>
-      <input type="submit" value="Add">
-    </div>
+            <label >Title</label><br>
+            <input type="text" id="title" placeholder="title" required>
+        </div>
+        <div>
+            <label >Author</label><br>
+            <input type="text" id="author" placeholder="author" required>
+        </div>
+        <button type="submit">Add</button>
     </form>
+    <script src="list.js"></script>
+</body>
+</html>
